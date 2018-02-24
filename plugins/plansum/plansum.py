@@ -5,7 +5,7 @@ except ImportError:
     pass
 
 import wx
-from wx.lib.pubsub import pub
+from wx.lib.pubsub import Publisher as pub
 from wx.xrc import XmlResource
 import numpy as np
 import pydicom
@@ -14,7 +14,7 @@ import numpy.testing as npt
     
 import unittest
 import os
-import threading, queue
+import threading, Queue
 
 
 def pluginProperties():
